@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+#wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* header */
+header{ 
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+header>.gnb{
+    display: flex;
+    justify-content: space-between;   
+    width: 1200px;  
+    padding: 30px 0 30px 80px;     
+}
+header>.gnb>ul{
+    display: flex;       
+}
+header>.gnb>ul>.gnb-logo{ 
+    display: block;   
+    width: 56px; 
+    background-image: url(../images/line_mainpage_head_gnb_logo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;     
+}
+header>.gnb>ul>.gnb-logo>a{
+    display: block;
+    width: 100%;
+    height: 20px;  
+    text-indent: -9999px;     
+}
+header>.gnb>ul>li{        
+    color: #999;
+    font-size: 14px;
+    line-height: 20px;    
+}
+header>.gnb>ul>li>a{ 
+    padding: 0 20px; 
+    color: #666;  
+    font-size: 14px;
+    line-height: 20px;
+}
+header>.gnb>p>#nation{
+    width: 180px;
+    height: 20px;
+    margin-left: 20px;
+    line-height: 20px;    
+}
+header>.mainmnu{
+    overflow: hidden;
+    position: relative;      
+    width: 1200px;  
+    height: 440px;  
+    margin: 0 auto;
+    border-top: 3px solid #333;
+}
+header>.mainmnu>.mainmnu-slides{
+    display: flex;  
+    position: absolute;
+    left: 0;
+    top: 0;      
+    width: 4800px;    
+} 
+header>.mainmnu>.mainmnu-slides>li{
+    width: 1200px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+}
+header>.mainmnu>.mainmnu-slides>li>a{
+    display: block;
+    height: 440px;
+    text-indent: -9999px;
+
+}
+
+header>.mainmnu>.mainmnu-slides>li:nth-child(1){background-image: url(../images/line_mainpage_head_mainmnu_lst1.png);}
+header>.mainmnu>.mainmnu-slides>li:nth-child(2){background-image: url(../images/line_mainpage_head_mainmnu_lst2.png);}
+header>.mainmnu>.mainmnu-slides>li:nth-child(3){background-image: url(../images/line_mainpage_head_mainmnu_lst3.png);}
+header>.mainmnu>.mainmnu-slides>li:nth-child(4){background-image: url(../images/line_mainpage_head_mainmnu_lst4.png);}
+
+header>.mainmnu>.mainmnu-pagination{
+    display: flex;
+    justify-content: space-between;   
+    position: absolute;
+    left: 530px;
+    bottom: 10px;
+    width: 140px;    
+}
+header>.mainmnu>.mainmnu-pagination>li>a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    text-indent: -9999px;
+    background-color: #fff; 
+    opacity: 0.5;   
+    border-radius: 10px;
+}
+header>.mainmnu>.mainmnu-pagination>li.on>a{background-color: #fff; opacity: 1;}
+
+/* section */
+section.community{
+    width: 1000px;
+    margin: 0 auto;
+}
+section.community>div{margin-top: 10px;}
+section.community>div:nth-child(1)>span,
+section.community>div:nth-child(3)>span,
+section.community>div:nth-child(5)>span{
+    float: left;
+    margin-right: 40px;
+}
+section.community>div:nth-child(2)>span,
+section.community>div:nth-child(4)>span{
+    float: right;
+    margin-right: 30px;
+}
+section.community>div>.community-box{
+    padding-top: 53px;      
+}    
+section.community>div>.community-box>h2{     
+    margin-bottom: 30px;  
+    font-size: 50px;     
+}
+section.community>div>.community-box>p{  
+    margin-top: 15px;
+    font-size: 13px;    
+    line-height: 25px; 
+}
+
+section.network{
+    display: flex;
+    flex-flow: row wrap;    
+    width: 1200px;
+    margin-top: 50px;
+}
+section.network>ul{   
+    width: 280px;   
+    margin-top: 30px;
+    margin-left: 100px;
+}
+section.network>ul>li:nth-child(2){
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* footer */
+footer{ 
+    margin-top: 50px;
+    padding: 20px 100px;      
+    background-color: #444 ;
+}
+footer>ul{
+    margin-top: 20px;    
+}
+footer>.lnb{display: flex; }
+footer>.lnb>li{color: #302e2e;}
+footer>.lnb>li>a{
+    color: #838383;
+    padding: 0 10px;
+}
+footer>.lnb>li:nth-child(1)>a{padding-left: 0;}
+footer>.sns{display: flex;}
+footer>.sns>li>a{
+    display: block;
+    width: 32px;
+    height: 32px;     
+    text-indent: -9999px;
+    background-image: url(../images/line_mainpage_sprit.png); 
+    background-repeat: no-repeat;
+}
+footer>.sns>li:nth-child(1)>a{
+    margin-right: 20px;
+    background-position: -1049px 0;
+}
+footer>.sns>li:nth-child(2)>a{
+    background-position: -816px 0;
+}
+footer>address{
+    margin-top: 20px;
+    color:#838383;
+    font-weight: 600;
+}
